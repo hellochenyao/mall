@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.115.43.128:8848
+    alicloud:
+      access-key: LTAI4GAb2Ar3NECX8rRGaPAe
+      secret-key: YYz7FAtjNggrCWTFlzv17ZiWLURiGG
+      oss:
+        endpoint: oss-cn-beijing.aliyuncs.com
+        bucket: 1236a
+alicloud:
+  app-code: 7ba30fce6f89488abea5a55fe3522cc3
+  host: https://smssend.shumaidata.com
+  path: /sms/send
+  template-id: M09DD535F4

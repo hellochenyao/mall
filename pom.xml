@@ -14,12 +14,22 @@
         <module>mall-order</module>
         <module>mall-product</module>
         <module>mall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>mall-common</module>
+        <module>mall-gateway</module>
+        <module>mall-third-party</module>
+        <module>mall-search</module>
+        <module>mall-auth-server</module>
+        <module>mall-sso-server</module>
+        <module>mall-test-sso-client</module>
+        <module>mall-cart</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.5.RELEASE</version>
+        <version>2.1.8.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -28,10 +38,10 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <!--SpringCloud最新稳定版本-->
-        <spring-cloud.version>Finchley.SR4</spring-cloud.version>
+        <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
         <java.version>1.8</java.version>
         <version.fastjson>1.2.13</version.fastjson>
-        <version.lombok>1.16.8</version.lombok>
+        <version.lombok>1.18.8</version.lombok>
         <version.junit>4.12</version.junit>
         <version.jedis>2.9.0</version.jedis>
         <version.apache.commons.lang3>3.1</version.apache.commons.lang3>
@@ -45,6 +55,7 @@
         <version.jackson.datatype>2.8.9</version.jackson.datatype>
         <version.javase>3.0.0</version.javase>
         <version.thumbnailator>0.4.8</version.thumbnailator>
+        <version.mybatis>3.2.0</version.mybatis>
     </properties>
 
 
@@ -56,6 +67,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus</artifactId>
+                <version>${version.mybatis}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
